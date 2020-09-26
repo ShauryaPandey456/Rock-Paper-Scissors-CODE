@@ -1,4 +1,3 @@
 # Rock-Paper-Scissors-CODE C#
-This the code for the ROCK PAPER SCISSORS project I am making it is not finished but should be finished within 3 to 4 days. 
-Many things are not finished but do not worry about that because it will be finished over time. 
-Some code I wrote like the last 4 lines of code at the bottom of the github page are lines of code that are work in progress so do not panic if the computer prints it out and some things do not make sense to you. This project was also complied in c# programming language. 
+This is the code I wrote for beginner's in c# for rock, paper, scissors. It took a few days because I am lazy but overall it is pretty good does the basic stuff of rock paper scissors, and there is no additions it's the actually game with no add ons by me. If you would like you canuse this code for your self when making projects I just want to advise you that do not use this to copy and paste use this as a reference for your code!
+Thanks!
