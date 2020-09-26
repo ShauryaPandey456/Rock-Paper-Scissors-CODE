@@ -1,0 +1,102 @@
+using System.ComponentModel.Design;
+using System.IO;
+using System.Runtime.InteropServices.ComTypes;
+
+namespace Rock_Paper_Scissors
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+             Random rnd = new Random();
+            int computersChoice = rnd.Next(1,3);
+            var stringYes = "yes";
+            var stringNo = "no";
+            string inputPlayer;
+            Console.WriteLine("Hello would you like to play rock, paper, scissors! [Yes/No] ");
+            var userResponse = Console.ReadLine();
+            if (string.Compare(userResponse, stringYes, true) == 0)
+            {
+                Console.WriteLine("Very well.... Game will start!");
+                Console.ReadLine();
+                Console.WriteLine("Please enter in your move (Pick between ROCK, PAPER, SCISSORS): ");
+                inputPlayer = Console.ReadLine();
+                if (computersChoice == 1)
+                {
+                    Console.WriteLine("Computer chose Rock");
+                    if (inputPlayer == "Rock")
+                    {
+                        Console.WriteLine("Draw");
+                    }
+                    else if (inputPlayer == "Paper")
+                    {
+                        Console.WriteLine("Player wins");
+                    }
+                    else if (inputPlayer == "Scissors")
+                    {
+                        Console.WriteLine("Computer wins");
+                    }
+                    else
+                    {
+                        Console.WriteLine("Error");
+                        Environment.Exit(0);
+                    }
+
+                }
+                else if (computersChoice == 2)
+                {
+                    Console.WriteLine("Computer chose Paper");
+                    if (inputPlayer == "Paper")
+                    {
+                        Console.WriteLine("Draw");
+                    }
+                    else if (inputPlayer == "Scissors")
+                    {
+                        Console.WriteLine("Player wins");
+                    }
+                    else if (inputPlayer == "Rock")
+                    {
+                        Console.WriteLine("Computer wins");
+                    }
+                    else
+                    {
+                        Console.WriteLine("Error");
+                        Environment.Exit(0);
+                    }
+
+                }
+                else if (computersChoice == 3)
+                {
+                    Console.WriteLine("Computer chose Scissors");
+                    if (inputPlayer == "Scissors")
+                    {
+                        Console.WriteLine("Draw");
+                    }
+                    else if (inputPlayer == "Rock")
+                    {
+                        Console.WriteLine("Player wins");
+                    }
+                    else if (inputPlayer == "Paper")
+                    {
+                        Console.WriteLine("Computer wins");
+                    }
+                    else
+                    {
+                        Console.WriteLine("Error");
+                        Environment.Exit(0);
+                    }
+
+                }
+
+            }
+            else if (string.Compare(userResponse, stringNo, true) == 0)
+            {
+                Console.WriteLine("Very well! Press ENTER to leave...");
+                Console.ReadLine();
+            }
+            else
+            {
+                Console.WriteLine("Wrong Input...");
+                Environment.Exit(0);
+            }
+        }
